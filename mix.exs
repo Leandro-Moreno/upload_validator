@@ -1,7 +1,7 @@
 defmodule UploadValidator.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @source_url "https://github.com/Leandro-Moreno/upload_validator"
 
   def project do
@@ -33,7 +33,10 @@ defmodule UploadValidator.MixProject do
   defp package do
     [
       licenses: ["MIT"],
-      links: %{"GitHub" => @source_url},
+      links: %{
+        "GitHub" => @source_url,
+        "Shiko" => "https://shiko.vet"
+      },
       maintainers: ["Leandro Moreno"],
       files: ~w(lib mix.exs README.md LICENSE)
     ]
